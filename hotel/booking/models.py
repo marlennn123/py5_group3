@@ -1,9 +1,9 @@
 from django.db import models
 
 class Hotel(models.Model):
-    name = models.CharField(max_length=32, unique=True)
+    name = models.CharField(max_length=32)
     description = models.TextField()
-    address = models.CharField(max_length=32, unique=True)
+    address = models.CharField(max_length=32)
     city = models.CharField(max_length=16)
     country = models.CharField(max_length=16)
     rating = models.PositiveIntegerField(default=0)
